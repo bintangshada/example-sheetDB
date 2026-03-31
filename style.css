@@ -1,0 +1,142 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2f5f7; /* Warna background abu-abu terang ala Traveloka */
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1ba0e2; /* Biru Traveloka */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Landing Page Hero */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=80') center/cover;
+    color: white;
+    padding: 20px;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Tombol Global */
+.btn-primary {
+    display: inline-block;
+    background-color: #ff5e1f; /* Orange ala Traveloka */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background-color: #e04a11;
+}
+
+/* Halaman Booking Layout */
+.booking-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Form Section */
+.form-section {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+.form-section h2 {
+    margin-bottom: 20px;
+    color: #1ba0e2;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input, select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* List Card Section */
+.list-section {
+    flex: 2;
+    min-width: 300px;
+}
+.list-section h2 {
+    margin-bottom: 20px;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* Desain Kartu (Card) */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    border-left: 5px solid #1ba0e2; /* Garis aksen biru */
+}
+.card h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+.card .destinasi {
+    display: inline-block;
+    background-color: #e8f5fd;
+    color: #1ba0e2;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}

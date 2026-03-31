@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Tiket - Liburanku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">✈️ Liburanku</div>
+        <a href="index.html" class="nav-link">Kembali ke Beranda</a>
+    </nav>
+
+    <main class="booking-container">
+        <section class="form-section">
+            <h2>Pesan Tiket Baru</h2>
+            <form id="formTiket">
+                <label for="nama">Nama Penumpang:</label>
+                <input type="text" id="nama" placeholder="Masukkan nama..." required>
+
+                <label for="destinasi">Pilih Destinasi:</label>
+                <select id="destinasi">
+                    <option value="Bali">Bali (Pesawat)</option>
+                    <option value="Yogyakarta">Yogyakarta (Kereta)</option>
+                    <option value="Bandung">Bandung (Travel)</option>
+                </select>
+
+                <button type="submit" id="btnSubmit" class="btn-primary">Konfirmasi Booking</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Tiket Terpesan</h2>
+            <div id="daftarCard" class="card-container">
+                <p>Memuat data tiket...</p>
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
